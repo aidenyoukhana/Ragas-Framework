@@ -30,7 +30,7 @@ def test_agent_goal_accuracy_achieved():
     """Test agent that successfully achieved the goal."""
     # Load test data from JSONL file
     data = load_jsonl_data(
-        "../../../data/agents_and_tools/agent_goal_accuracy.jsonl",
+        "data/agents_and_tools/agent_goal_accuracy.jsonl",
         scenario_filter="achieved"
     )[0]
     
@@ -57,7 +57,7 @@ def test_agent_goal_accuracy_not_achieved():
     """Test agent that failed to achieve the goal."""
     # Load test data from JSONL file
     data = load_jsonl_data(
-        "../../../data/agents_and_tools/agent_goal_accuracy.jsonl",
+        "data/agents_and_tools/agent_goal_accuracy.jsonl",
         scenario_filter="not_achieved"
     )[0]
     
@@ -84,7 +84,7 @@ def test_agent_goal_accuracy_partial():
     """Test agent with partial goal achievement."""
     # Load test data from JSONL file
     data = load_jsonl_data(
-        "../../../data/agents_and_tools/agent_goal_accuracy.jsonl",
+        "data/agents_and_tools/agent_goal_accuracy.jsonl",
         scenario_filter="partial"
     )[0]
     

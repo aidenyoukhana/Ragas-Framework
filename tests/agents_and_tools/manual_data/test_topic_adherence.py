@@ -30,7 +30,7 @@ def test_topic_adherence_on_topic():
     """Test agent response that stays on topic."""
     # Load test data from JSONL file
     data = load_jsonl_data(
-        "../../../data/agents_and_tools/topic_adherence.jsonl",
+        "data/agents_and_tools/topic_adherence.jsonl",
         scenario_filter="on_topic"
     )[0]
     
@@ -57,7 +57,7 @@ def test_topic_adherence_off_topic():
     """Test agent response that goes off topic."""
     # Load test data from JSONL file
     data = load_jsonl_data(
-        "../../../data/agents_and_tools/topic_adherence.jsonl",
+        "data/agents_and_tools/topic_adherence.jsonl",
         scenario_filter="off_topic"
     )[0]
     
@@ -84,7 +84,7 @@ def test_topic_adherence_partially_on_topic():
     """Test agent response that partially stays on topic."""
     # Load test data from JSONL file
     data = load_jsonl_data(
-        "../../../data/agents_and_tools/topic_adherence.jsonl",
+        "data/agents_and_tools/topic_adherence.jsonl",
         scenario_filter="partially_on_topic"
     )[0]
     

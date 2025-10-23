@@ -29,13 +29,16 @@ jobs:
 
     - name: Configure environment
       run: |
-        # Copy .env template and set dummy values for testing
-        cp .env .env.local
-        echo "OPENAI_API_KEY=dummy_key" >> .env.local
-        echo "AZURE_OPENAI_API_KEY=dummy_key" >> .env.local
-        echo "AZURE_OPENAI_ENDPOINT=https://dummy.openai.azure.com/" >> .env.local
-        echo "AZURE_OPENAI_API_VERSION=2024-02-01" >> .env.local
-        echo "AZURE_OPENAI_DEPLOYMENT_NAME=dummy-deployment" >> .env.local
+        # Create .env.local from GitHub secrets
+        echo "AZURE_OPENAI_API_KEY=${{ secrets.AZURE_OPENAI_API_KEY }}" > .env.local
+        echo "AZURE_OPENAI_ENDPOINT=${{ secrets.AZURE_OPENAI_ENDPOINT }}" >> .env.local
+        echo "AZURE_OPENAI_API_VERSION=${{ secrets.AZURE_OPENAI_API_VERSION }}" >> .env.local
+        echo "AZURE_OPENAI_DEPLOYMENT_NAME=${{ secrets.AZURE_OPENAI_DEPLOYMENT_NAME }}" >> .env.local
+        echo "AZURE_OPENAI_EMBEDDING_DEPLOYMENT_NAME=${{ secrets.AZURE_OPENAI_EMBEDDING_DEPLOYMENT_NAME }}" >> .env.local
+        echo "AZURE_OPENAI_EMBEDDING_MODEL=${{ secrets.AZURE_OPENAI_EMBEDDING_MODEL }}" >> .env.local
+        echo "AZURE_SUBSCRIPTION_ID=${{ secrets.AZURE_SUBSCRIPTION_ID }}" >> .env.local
+        echo "AZURE_RESOURCE_GROUP=${{ secrets.AZURE_RESOURCE_GROUP }}" >> .env.local
+        echo "AZURE_PROJECT_NAME=${{ secrets.AZURE_PROJECT_NAME }}" >> .env.local
 
     - name: Run tests
       run: |

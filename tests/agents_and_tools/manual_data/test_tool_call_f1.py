@@ -30,7 +30,7 @@ def test_tool_call_f1_perfect():
     """Test with perfect tool call predictions."""
     # Load test data from JSONL file
     data = load_jsonl_data(
-        "/Users/aiden.youkhana/Ragas-Framework/data/agents_and_tools/tool_call_f1.jsonl",
+        "../../../data/agents_and_tools/tool_call_f1.jsonl",
         scenario_filter="perfect_match"
     )[0]
     
@@ -59,7 +59,7 @@ def test_tool_call_f1_partial_match():
     """Test with partial tool call matches."""
     # Load test data from JSONL file
     data = load_jsonl_data(
-        "/Users/aiden.youkhana/Ragas-Framework/data/agents_and_tools/tool_call_f1.jsonl",
+        "../../../data/agents_and_tools/tool_call_f1.jsonl",
         scenario_filter="partial_match"
     )[0]
     
@@ -89,7 +89,7 @@ def test_tool_call_f1_no_match():
     """Test with no tool call matches."""
     # Load test data from JSONL file
     data = load_jsonl_data(
-        "/Users/aiden.youkhana/Ragas-Framework/data/agents_and_tools/tool_call_f1.jsonl",
+        "../../../data/agents_and_tools/tool_call_f1.jsonl",
         scenario_filter="no_match"
     )[0]
     

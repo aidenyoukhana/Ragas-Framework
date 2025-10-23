@@ -30,7 +30,7 @@ def test_tool_call_accuracy_correct():
     """Test correct tool selection."""
     # Load test data from JSONL file
     data = load_jsonl_data(
-        "/Users/aiden.youkhana/Ragas-Framework/data/agents_and_tools/tool_call_accuracy.jsonl",
+        "../../../data/agents_and_tools/tool_call_accuracy.jsonl",
         scenario_filter="correct_tool"
     )[0]
     
@@ -58,7 +58,7 @@ def test_tool_call_accuracy_wrong_tool():
     """Test incorrect tool selection."""
     # Load test data from JSONL file
     data = load_jsonl_data(
-        "/Users/aiden.youkhana/Ragas-Framework/data/agents_and_tools/tool_call_accuracy.jsonl",
+        "../../../data/agents_and_tools/tool_call_accuracy.jsonl",
         scenario_filter="wrong_tool"
     )[0]
     
@@ -86,7 +86,7 @@ def test_tool_call_accuracy_wrong_parameters():
     """Test correct tool but wrong parameters."""
     # Load test data from JSONL file
     data = load_jsonl_data(
-        "/Users/aiden.youkhana/Ragas-Framework/data/agents_and_tools/tool_call_accuracy.jsonl",
+        "../../../data/agents_and_tools/tool_call_accuracy.jsonl",
         scenario_filter="wrong_parameters"
     )[0]
     

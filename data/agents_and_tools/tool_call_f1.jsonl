@@ -1,0 +1,3 @@
+{"query": "Book a flight from NYC to LA", "tool_calls": ["search_flights", "book_flight"], "expected_tool_calls": ["search_flights", "book_flight"], "scenario": "perfect_match"}
+{"query": "Search for hotels and get weather", "tool_calls": ["search_hotels", "get_time", "get_weather"], "expected_tool_calls": ["search_hotels", "get_weather"], "scenario": "partial_match"}
+{"query": "Search for flights", "tool_calls": ["calculate_math"], "expected_tool_calls": ["search_flights"], "scenario": "no_match"}

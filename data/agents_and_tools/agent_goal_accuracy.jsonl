@@ -1,0 +1,3 @@
+{"goal": "Calculate the sum of 2 + 2", "response": "The sum of 2 + 2 is 4", "scenario": "achieved"}
+{"goal": "Find the capital of France", "response": "I don't have access to that information", "scenario": "not_achieved"}
+{"goal": "Translate 'Hello' to Spanish and French", "response": "In Spanish, 'Hello' is 'Hola'. I couldn't find the French translation.", "scenario": "partial"}

@@ -1,0 +1,3 @@
+{"query": "What is the weather in New York?", "tool_calls": ["get_weather"], "expected_tools": ["get_weather"], "scenario": "correct_tool"}
+{"query": "What is the weather in New York?", "tool_calls": ["calculate_math"], "expected_tools": ["get_weather"], "scenario": "wrong_tool"}
+{"query": "Get weather for New York", "tool_calls": [{"tool": "get_weather", "params": {"location": "Los Angeles"}}], "expected_params": {"location": "New York"}, "scenario": "wrong_parameters"}

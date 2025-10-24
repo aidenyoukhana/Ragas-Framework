@@ -2,6 +2,10 @@
 
 A comprehensive testing framework for evaluating Large Language Models using the Ragas library. This framework includes categorized evaluators with both LLM-generated and manual test datasets.
 
+<img width="1245" height="878" alt="image" src="https://github.com/user-attachments/assets/8a9b035d-6a3d-488d-9943-53ef2585e1c7" />
+<img width="557" height="832" alt="image" src="https://github.com/user-attachments/assets/46fec4ab-8866-403c-8ced-fc5ba1a680b5" />
+
+
 ## Features
 
 - **29+ Ragas Evaluators**: Organized into 6 categories covering RAG, agents, SQL, NLP, and more
